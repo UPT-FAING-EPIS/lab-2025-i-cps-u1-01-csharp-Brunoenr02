@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain.Tests\\Bank.Domain.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain.Tests\\Bank.Domain.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain.Tests\\Bank.Domain.Tests.csproj",
+        "projectName": "Bank.Domain.Tests",
+        "projectPath": "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain.Tests\\Bank.Domain.Tests.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain\\Bank.Domain.csproj": {
+                "projectPath": "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain\\Bank.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain\\Bank.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain\\Bank.Domain.csproj",
+        "projectName": "Bank.Domain",
+        "projectPath": "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain\\Bank.Domain.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "D:\\2025_I\\CalidadSoftware\\lab-2025-i-cps-u1-01-csharp-Brunoenr02\\Bank\\Bank.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

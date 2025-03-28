@@ -1,8 +1,8 @@
 name: Sonar Continuos Integration
 env:
   DOTNET_VERSION: '8.0.407'                     # la versión de .NET
-  SONAR_ORG: 'Lab01CalidadSoftware'                    # Nombre de la organización de sonar cloud
-  SONAR_PROJECT: 'Brunoenr02_Lab01CalidadSoftware'        # Key ID del proyecto de sonar
+  SONAR_ORG: 'Lab01CalidadSoftware'             # Nombre de la organización de sonar cloud
+  SONAR_PROJECT: 'Brunoenr02_Lab01CalidadSoftware'  # Key ID del proyecto de sonar
 on:
   push:
     branches: [ "main" ]
@@ -31,6 +31,7 @@ jobs:
 
       - name: Instalar Scanner
         run: dotnet tool install -g dotnet-sonarscanner
+
       - name: Ejecutar pruebas
         run: |
           dotnet restore 
@@ -38,3 +39,25 @@ jobs:
           dotnet-sonarscanner begin /k:"${{ env.SONAR_PROJECT }}" /o:"${{ env.SONAR_ORG }}" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="*/*/*/coverage.opencover.xml" /d:sonar.qualitygate.wait=true
           dotnet build
           dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+  release:
+    name: Publicar Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Crear el paquete NuGet
+        run: |
+          dotnet pack --configuration Release --output nupkg
+
+      - name: Publicar en GitHub Packages
+        run: |
+          dotnet nuget push nupkg/*.nupkg \
+            --api-key ${{ secrets.GITHUB_TOKEN }} \
+            --source "https://nuget.pkg.github.com/Brunoenr02/index.json" \
+            --skip-duplicate

@@ -58,7 +58,7 @@ dotnet add ./Bank.Domain.Tests/Bank.Domain.Tests.csproj reference ./Bank.Domain/
 ```
 5. Iniciar Visual Studio Code (VS Code) abriendo el folder de la solución como proyecto. En el proyecto Bank.Domain, si existe un archivo Class1.cs proceder a eliminarlo. Asimismo en el proyecto Bank.Domain.Tests si existiese un archivo UnitTest1.cs, también proceder a eliminarlo.
 
-6. En VS Code, en el proyecto Bank.WebApi proceder la carpeta `Models` y dentro de esta el archivo BankAccount.cs e introducir el siguiente código:
+6. En VS Code, en el proyecto Bank.Domain proceder a crear la carpeta `Models` y dentro de esta el archivo BankAccount.cs e introducir el siguiente código:
 ```C#
 namespace Bank.Domain.Models
 {
@@ -91,7 +91,7 @@ namespace Bank.Domain.Models
     }
 }
 ```
-7. Luego en el proyecto Bank.WepApi.Tests añadir un nuevo archivo BanckAccountTests.cs e introducir el siguiente código:
+7. Luego en el proyecto Bank.Domain.Tests añadir un nuevo archivo BanckAccountTests.cs e introducir el siguiente código:
 ```C#
 using Bank.Domain.Models;
 using NUnit.Framework;
@@ -186,14 +186,12 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
-      - name: Restaurar los paquetes
-        run: dotnet restore 
-      - name: Ejecutar pruebas
-        run: dotnet test --collect:"XPlat Code Coverage;Format=opencover"
       - name: Instalar Scanner
         run: dotnet tool install -g dotnet-sonarscanner
-      - name: Ejecutar escaneo
-        run: | 
+      - name: Ejecutar pruebas
+        run: |
+          dotnet restore 
+          dotnet test --collect:"XPlat Code Coverage;Format=opencover"
           dotnet-sonarscanner begin /k:"${{ env.SONAR_PROJECT }}" /o:"${{ env.SONAR_ORG }}" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="*/*/*/coverage.opencover.xml" /d:sonar.qualitygate.wait=true
           dotnet build
           dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
@@ -202,7 +200,7 @@ jobs:
 ---
 ## Actividades Encargadas
 1. Adicionar un metodos de prueba para verificar el método de crédito.
-2. Adjuntar la captura donde se evidencia el incremento del valor de cobertura en un archivo cobertura.png.
+2. Adjuntar la captura donde se evidencia el incremento del valor de cobertura en SonarCloud en un archivo cobertura.png.
 3. Adicionar a la automatizacion la construcción del archivo .nuget y la publicación como paquete en su repositorio de Github
 4. Adicionar a la automatizacion la generación del release de la versión 1.0.0 del nuget, debe indicar las modificaciones del paquete en base a los comentarios de los commits realizados
    

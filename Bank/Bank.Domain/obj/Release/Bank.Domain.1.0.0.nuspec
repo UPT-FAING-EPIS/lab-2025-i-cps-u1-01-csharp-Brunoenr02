@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Bank.Domain</id>
+    <version>1.0.0</version>
+    <authors>BrunoAncco</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Desarrollo del Laboratorio 01</description>
+    <repository type="git" url="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-01-csharp-Brunoenr02" commit="77cadf9553d790dfd69762bd6161f2bb42737dcb" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\bin\Release\net8.0\Bank.Domain.dll" target="lib\net8.0\Bank.Domain.dll" />
+  </files>
+</package>

@@ -45,7 +45,7 @@ jobs:
         run: |
           dotnet nuget push ./nuget_package/*.nupkg \
             --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
-            --api-key ${{ secrets.SONAR_TOKEN }} \
+            --api-key ${{ secrets.NUGET_GITHUB_TOKEN }} \
             --skip-duplicate
 
       - name: Create GitHub Release
@@ -56,4 +56,4 @@ jobs:
           body_path: release_notes.md
           files: ./nuget_package/*.nupkg
         env:
-          GITHUB_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

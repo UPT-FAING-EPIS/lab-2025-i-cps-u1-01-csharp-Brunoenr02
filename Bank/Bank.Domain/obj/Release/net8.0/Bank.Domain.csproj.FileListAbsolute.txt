@@ -1,0 +1,12 @@
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\bin\Release\net8.0\Bank.Domain.deps.json
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\bin\Release\net8.0\Bank.Domain.dll
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\bin\Release\net8.0\Bank.Domain.pdb
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\Bank.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\Bank.Domain.AssemblyInfoInputs.cache
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\Bank.Domain.AssemblyInfo.cs
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\Bank.Domain.csproj.CoreCompileInputs.cache
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\Bank.Domain.sourcelink.json
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\Bank.Domain.dll
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\refint\Bank.Domain.dll
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\Bank.Domain.pdb
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain\obj\Release\net8.0\ref\Bank.Domain.dll

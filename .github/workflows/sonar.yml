@@ -53,7 +53,7 @@ jobs:
 
       - name: Crear el paquete NuGet
         run: |
-          dotnet pack --configuration Release --output nupkg
+          dotnet pack Bank/Bank.Domain/Bank.Domain.csproj --configuration Release --output nupkg
 
       - name: Publicar en GitHub Packages
         run: |

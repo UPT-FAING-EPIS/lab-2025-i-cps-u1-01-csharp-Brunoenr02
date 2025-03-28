@@ -13,6 +13,7 @@
     <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-01-csharp-Brunoenr02</RepositoryUrl>
     <Description>Desarrollo del Laboratorio 01</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
 </Project>

@@ -1,0 +1,59 @@
+name: Build and Publish NuGet Package
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  DOTNET_VERSION: '8.0.407'
+  PACKAGE_NAME: 'Bank.Domain'
+  VERSION: '1.0.0'  # Define la versión del paquete NuGet
+
+jobs:
+  build:
+    name: Build & Publish NuGet
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Configure NuGet
+        uses: NuGet/setup-nuget@v1
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build project
+        run: dotnet build --configuration Release
+
+      - name: Create NuGet package
+        run: dotnet pack --configuration Release -p:PackageVersion=${{ env.VERSION }} --output ./nuget_package
+
+      - name: Extract commit messages for release notes
+        run: |
+          git log --pretty=format:"- %s" -n 10 > release_notes.md
+
+      - name: Publish package to GitHub Packages
+        run: |
+          dotnet nuget push ./nuget_package/*.nupkg \
+            --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
+            --api-key ${{ secrets.SONAR_TOKEN }} \
+            --skip-duplicate
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ env.VERSION }}
+          name: Release v${{ env.VERSION }}
+          body_path: release_notes.md
+          files: ./nuget_package/*.nupkg
+        env:
+          GITHUB_TOKEN: ${{ secrets.SONAR_TOKEN }}

@@ -1,0 +1,15 @@
+﻿D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain.Tests\BankAccountTests.cs
+C:\Users\bruno\.nuget\packages\microsoft.net.test.sdk\17.13.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\bruno\.nuget\packages\microsoft.testplatform.testhost\17.13.0\build\netcoreapp3.1\x64\testhost.exe
+C:\Users\bruno\.nuget\packages\microsoft.testplatform.testhost\17.13.0\build\netcoreapp3.1\x64\testhost.dll
+C:\Users\bruno\.nuget\packages\nunit3testadapter\5.0.0\build\netcoreapp3.1\NUnit3.TestAdapter.pdb
+C:\Users\bruno\.nuget\packages\nunit3testadapter\5.0.0\build\netcoreapp3.1\nunit.engine.dll
+C:\Users\bruno\.nuget\packages\nunit3testadapter\5.0.0\build\netcoreapp3.1\nunit.engine.api.dll
+C:\Users\bruno\.nuget\packages\nunit3testadapter\5.0.0\build\netcoreapp3.1\nunit.engine.core.dll
+C:\Users\bruno\.nuget\packages\nunit3testadapter\5.0.0\build\netcoreapp3.1\testcentric.engine.metadata.dll
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain.Tests\TestResults\c7a400e3-02aa-4c20-8760-1c6f0f80f62d\coverage.cobertura.xml
+D:\2025_I\CalidadSoftware\lab-2025-i-cps-u1-01-csharp-Brunoenr02\Bank\Bank.Domain.Tests\TestResults\fcc2f2b5-dc1c-4fd5-bd14-b8ea5fd5d1f6\coverage.opencover.xml
+C:\Users\bruno\.nuget\packages\nunit3testadapter\5.0.0\build\netcoreapp3.1\NUnit3.TestAdapter.dll
+C:\Users\bruno\.nuget\packages\mstest.testadapter\3.1.1\build\net6.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\bruno\.nuget\packages\mstest.testadapter\3.1.1\build\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\bruno\.nuget\packages\mstest.testadapter\3.1.1\build\net6.0\Microsoft.TestPlatform.AdapterUtilities.dll

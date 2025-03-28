@@ -1,0 +1,234 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24554.2 (bc1c3011)",
+        "semanticVersion": "4.11.0",
+        "language": "es-ES"
+      },
+      "results": [
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof en lugar del literal de cadena \"amount\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 55,
+                  "endLine": 25,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1512",
+          "level": "note",
+          "message": "Use 'ArgumentOutOfRangeException.ThrowIfNegative' en lugar de iniciar explícitamente una nueva instancia de excepción",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 13,
+                  "endLine": 25,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 17,
+                  "endLine": 24,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MethodNameProperty": "ThrowIfNegative"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof en lugar del literal de cadena \"amount\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 55,
+                  "endLine": 17,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof en lugar del literal de cadena \"amount\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 55,
+                  "endLine": 19,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1512",
+          "level": "note",
+          "message": "Use 'ArgumentOutOfRangeException.ThrowIfGreaterThan' en lugar de iniciar explícitamente una nueva instancia de excepción",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endLine": 17,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 17,
+                  "endLine": 16,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 26,
+                  "endLine": 16,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MethodNameProperty": "ThrowIfGreaterThan"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1512",
+          "level": "note",
+          "message": "Use 'ArgumentOutOfRangeException.ThrowIfNegative' en lugar de iniciar explícitamente una nueva instancia de excepción",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 13,
+                  "endLine": 19,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/2025_I/CalidadSoftware/lab-2025-i-cps-u1-01-csharp-Brunoenr02/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 17,
+                  "endLine": 18,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MethodNameProperty": "ThrowIfNegative"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1507": {
+          "id": "CA1507",
+          "shortDescription": "Use nameof para expresar nombres de símbolos",
+          "fullDescription": "El uso de nameof ayuda a mantener el código válido durante la refactorización.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1507",
+          "properties": {
+            "category": "Maintainability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1512": {
+          "id": "CA1512",
+          "shortDescription": "Uso del asistente de inicio ArgumentOutOfRangeException",
+          "fullDescription": "Los asistentes de inicio son más sencillos y eficaces que un bloque if que construye una nueva instancia de excepción.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1512",
+          "properties": {
+            "category": "Maintainability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

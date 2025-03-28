@@ -1,0 +1,9 @@
+ƒ
+Bank.Domain.Models.BankAccountobjectY
+BankAccount(string, double):Bank.Domain.Models.BankAccount.BankAccount(string, double)=
+Debit(double),Bank.Domain.Models.BankAccount.Debit(double)?
+Credit(double)-Bank.Domain.Models.BankAccount.Credit(double)C
+CustomerName.get/Bank.Domain.Models.BankAccount.CustomerName.getC
+CustomerName.set/Bank.Domain.Models.BankAccount.CustomerName.set9
+Balance.get*Bank.Domain.Models.BankAccount.Balance.get9
+Balance.set*Bank.Domain.Models.BankAccount.Balance.set

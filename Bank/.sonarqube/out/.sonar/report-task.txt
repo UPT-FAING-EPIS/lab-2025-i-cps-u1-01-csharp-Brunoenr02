@@ -1,0 +1,7 @@
+organization=lab01calidadsoftware
+projectKey=Brunoenr02_Lab01CalidadSoftware
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.61173
+dashboardUrl=https://sonarcloud.io/dashboard?id=Brunoenr02_Lab01CalidadSoftware
+ceTaskId=AZXa8W-JSukVt4EcalDY
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZXa8W-JSukVt4EcalDY

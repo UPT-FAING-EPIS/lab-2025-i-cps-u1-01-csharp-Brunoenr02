@@ -1,0 +1,36 @@
+name: Build and Publish NuGet Package
+
+on:
+  push:
+    branches:
+      - main  # Ejecuta cuando haya cambios en main (puedes cambiarlo)
+  workflow_dispatch:  # Permite ejecución manual desde GitHub Actions
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Pack NuGet Package
+      run: dotnet pack --configuration Release --no-build --output ./nupkgs
+
+    - name: Publish NuGet Package to GitHub Packages
+      run: dotnet nuget push ./nupkgs/*.nupkg --source "https://nuget.pkg.github.com/Brunoenr02/index.json" --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate

@@ -4,6 +4,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- Configuración para publicar como paquete NuGet -->
+    <PackageId>Bank.Domain</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>BrunoAncco</Authors>
+    <Company>Lab01CalidadSoftware</Company>
+    <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-01-csharp-Brunoenr02</RepositoryUrl>
+    <Description>Desarrollo del Laboratorio 01</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
 </Project>

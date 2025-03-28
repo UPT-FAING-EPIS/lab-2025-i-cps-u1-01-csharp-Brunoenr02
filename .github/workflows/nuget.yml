@@ -1,9 +1,9 @@
 name: Build and Publish NuGet Package
 
 on:
-  push:
-    branches:
-      - main  # Ejecuta cuando haya cambios en main (puedes cambiarlo)
+  #push:
+    #branches:
+    #  - main  # Ejecuta cuando haya cambios en main (puedes cambiarlo)
   workflow_dispatch:  # Permite ejecución manual desde GitHub Actions
 
 permissions:

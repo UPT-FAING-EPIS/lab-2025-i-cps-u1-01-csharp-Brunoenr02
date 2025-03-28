@@ -28,7 +28,7 @@ jobs:
       with:
         test-name: T2
         setup-command: export HOME='/home/runner' && cd Bank && dotnet restore
-        command: export HOME='/home/runner' && cd Bank && dotnet restore | grep "actualizados",
+        command: export HOME='/home/runner' && cd Bank && dotnet restore | grep "up-to-date"
         timeout: 10
         max-score: 4
     - name: T3

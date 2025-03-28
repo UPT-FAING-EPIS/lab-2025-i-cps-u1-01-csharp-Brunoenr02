@@ -4,7 +4,7 @@
   * Comprender el funcionamiento de las pruebas estaticas de seguridad de còdigo de las aplicaciones que desarrollamos utilizando SonarQube.
 
 ## REQUERIMIENTOS
-  * Conocimientos: 
+  * Conocimientos:
     - Conocimientos básicos de Bash (powershell).
     - Conocimientos básicos de Contenedores (Docker).
   * Hardware:

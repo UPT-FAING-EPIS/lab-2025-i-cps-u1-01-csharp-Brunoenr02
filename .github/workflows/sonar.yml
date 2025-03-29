@@ -1,7 +1,7 @@
 name: Sonar Continuos Integration
 env:
   DOTNET_VERSION: '8.0.407'                     # la versión de .NET
-  SONAR_ORG: 'Lab01CalidadSoftware'             # Nombre de la organización de sonar cloud
+  SONAR_ORG: 'lab01calidadsoftware'             # Nombre de la organización de sonar cloud
   SONAR_PROJECT: 'Brunoenr02_Lab01CalidadSoftware'  # Key ID del proyecto de sonar
 on:
   push:

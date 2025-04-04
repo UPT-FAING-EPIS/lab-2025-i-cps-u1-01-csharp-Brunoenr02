@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: T1
-        setup-command: export HOME='/home/runner' && cd Bank && dotnet restore
-        command: export HOME='/home/runner' && cd Bank && dotnet test
+        setup-command: export HOME='/home/runner' && cd SOLIDapp && dotnet restore
+        command: export HOME='/home/runner' && cd SOLIDapp && dotnet test
         timeout: 10
         max-score: 4
     - name: T2
@@ -27,17 +27,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: T2
-        setup-command: export HOME='/home/runner' && cd Bank && dotnet restore
-        command: export HOME='/home/runner' && cd Bank && dotnet restore | grep "up-to-date"
-        timeout: 10
-        max-score: 4
-    - name: T3
-      id: t3
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: T3
         setup-command: ''
-        command: ls -l cobertura.png
+        command: ls -la cobertura.png
         timeout: 10
         max-score: 4
     - name: T4
@@ -46,25 +37,24 @@ jobs:
       with:
         test-name: T4
         setup-command: ''
-        command: cat .github/workflows/sonar.yml | grep nuget
+        command: cat  .github/workflow/sonar.yml | grep nuget
         timeout: 10
-        max-score: 4
-    - name: T5
-      id: t5
+        max-score: 6
+    - name: T3
+      id: t3
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: T5
+        test-name: T3
         setup-command: ''
-        command: cat .github/workflows/sonar.yml | grep release
+        command: cat .github/workflow/sonar.yml
         timeout: 10
-        max-score: 4
+        max-score: 6
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         T1_RESULTS: "${{steps.t1.outputs.result}}"
         T2_RESULTS: "${{steps.t2.outputs.result}}"
-        T3_RESULTS: "${{steps.t3.outputs.result}}"
         T4_RESULTS: "${{steps.t4.outputs.result}}"
-        T5_RESULTS: "${{steps.t5.outputs.result}}"
+        T3_RESULTS: "${{steps.t3.outputs.result}}"
       with:
-        runners: t1,t2,t3,t4,t5
+        runners: t1,t2,t4,t3

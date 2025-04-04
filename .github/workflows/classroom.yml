@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: T1
-        setup-command: export HOME='/home/runner' && cd SOLIDapp && dotnet restore
-        command: export HOME='/home/runner' && cd SOLIDapp && dotnet test
+        setup-command: export HOME='/home/runner' && cd Bank && dotnet restore
+        command: export HOME='/home/runner' && cd Bank && dotnet test
         timeout: 10
         max-score: 4
     - name: T2
@@ -37,7 +37,7 @@ jobs:
       with:
         test-name: T4
         setup-command: ''
-        command: cat  .github/workflow/sonar.yml | grep nuget
+        command: cat  .github/workflows/sonar.yml | grep nuget
         timeout: 10
         max-score: 6
     - name: T3
@@ -46,7 +46,7 @@ jobs:
       with:
         test-name: T3
         setup-command: ''
-        command: cat .github/workflow/sonar.yml
+        command: cat .github/workflows/sonar.yml
         timeout: 10
         max-score: 6
     - name: Autograding Reporter
